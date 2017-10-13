@@ -3,7 +3,7 @@ Simple PowerShell Base64 encoder to avoid detection of your malicious payload
 
 # Usage 
 ```
-import-module .\Obfuscator.ps1; Base64-Obfuscator -Data "U3VwZXIgTWFsaWNpb3VzIENvYmFsdCBTdHJpa2UgQmFzZTY0IG9uZWxpbmVy"
+PS> import-module .\Obfuscator.ps1; Base64-Obfuscator -Data "U3VwZXIgTWFsaWNpb3VzIENvYmFsdCBTdHJpa2UgQmFzZTY0IG9uZWxpbmVy"
 Encoded Base64 Output
 ===========================================================
 
