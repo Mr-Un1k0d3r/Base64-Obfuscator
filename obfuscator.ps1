@@ -1,5 +1,5 @@
 function Base64-Obfuscator {
-	# Author: Mr.Un1k0d3r RingZer0 Team
+    # Author: Mr.Un1k0d3r RingZer0 Team
     [CmdletBinding()]
     Param (
 		[Parameter(Position = 0, Mandatory = $True, ValueFromPipeline = $True)]
