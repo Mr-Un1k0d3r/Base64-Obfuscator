@@ -15,6 +15,6 @@ function Base64-Obfuscator {
 		$Var2 = -Join ((65..90) + (97..122) | Get-Random -Count ((1..12) | Get-Random) | %{[char]$_})
 		
 		Write-Output "Encoded Base64 Output`n===========================================================`n"
-		Write-Output "powershell -exec bypass `$$($Var1) = [Text.Encoding]::ASCII.GetString(([Text.Encoding]::ASCII.GetBytes(`'$($MixedBase64)`') | Sort-Object { Get-Random -SetSeed $($Seed) })); `$$($Var2) = [Text.Encoding]::ASCII.GetString([Convert]::FromBase64String(`$$($Var1))); IEX `$$($Var2)"
+		Write-Output "`$$($Var1) = [Text.Encoding]::ASCII.GetString(([Text.Encoding]::ASCII.GetBytes(`"$($MixedBase64)"') | Sort-Object { Get-Random -SetSeed $($Seed) })); `$$($Var2) = [Text.Encoding]::ASCII.GetString([Convert]::FromBase64String(`$$($Var1))); IEX `$$($Var2)"
 	}
 }
